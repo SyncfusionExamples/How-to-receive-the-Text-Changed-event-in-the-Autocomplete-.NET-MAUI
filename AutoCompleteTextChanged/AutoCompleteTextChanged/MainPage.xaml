@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:editors="clr-namespace:Syncfusion.Maui.Inputs;assembly=Syncfusion.Maui.Inputs"
+             x:Class="AutoCompleteTextChanged.MainPage">
+
+    <VerticalStackLayout Padding="10">
+        <Label Text="Choose a Country" FontAttributes="Bold" FontSize="16" HorizontalOptions="Center"/>
+
+        <editors:SfAutocomplete x:Name="autoComplete" WidthRequest="250">
+            <editors:SfAutocomplete.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>United States</x:String>
+                    <x:String>India</x:String>
+                    <x:String>France</x:String>
+                    <x:String>Italy</x:String>
+                    <x:String>Germany</x:String>
+                    <x:String>China</x:String>
+                </x:Array>
+            </editors:SfAutocomplete.ItemsSource>
+        </editors:SfAutocomplete>
+    </VerticalStackLayout>
+
+</ContentPage>

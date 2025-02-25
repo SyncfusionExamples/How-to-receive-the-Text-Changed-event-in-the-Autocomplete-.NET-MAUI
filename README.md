@@ -12,8 +12,8 @@ public partial class MainPage : ContentPage
     {
         InitializeComponent();
         
-        // Get the Entry control from SfAutoComplete
-        var entry = autoComplete.Children[1] as Entry;
+        // Get the Entry control from SfAutocomplete
+        var entry = GetEntryFromAutoComplete(autoComplete);
         if (entry != null)
         {
             // Attach the TextChanged event handler
@@ -24,6 +24,18 @@ public partial class MainPage : ContentPage
     private void MainPage_TextChanged(object? sender, TextChangedEventArgs e)
     {
         // Handle the text change event here
+    }
+    
+    private Entry? GetEntryFromAutocomplete(SfAutocomplete sfAutocomplete)
+    {
+        foreach (var child in sfAutocomplete.Children)
+        {
+            if (child is Entry entry)
+            {
+                return entry;
+            }
+        }
+        return null; // Return null if no Entry is found
     }
 }
 ```

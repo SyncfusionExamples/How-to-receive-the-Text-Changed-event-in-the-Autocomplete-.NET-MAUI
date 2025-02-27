@@ -1,4 +1,4 @@
-# How-to-receive-the-Text-Changed-event-in-the-Autocomplete-.NET-MAUI
+# How to receive the Text Changed event in the .NET MAUI Autocomplete
 This repository contains a sample explaining how to receive the Text Changed event in the Autocomplete .NET MAUIt
 ## Text Changed event in the Autocomplete .NET MAUI
 
